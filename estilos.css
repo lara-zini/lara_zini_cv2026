@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*css document*/
+
+/*AJUSTES GENERALES*/
+@font-face {
+	font-family: 'rosario-reg';
+    src: url(fonts/Rosario-Regular.otf);
+    format: (otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rosario-bold';
+    src: url(fonts/Rosario-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rosario-lightitalic';
+    src: url(fonts/Rosario-LightItalic.otf);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/*CARACTERISTICAS*/
+body {
+    background-color: rgb(234, 215, 252);
+    font-family:'rosario-reg', sans-serif;
+    text-align: center;
+    text-wrap: balance;
+    color:rgb(2, 2, 2);
+}
+h1, h2, h3{
+    font-family: 'rosario-bold', sans-serif;
+    color: rgb(132, 30, 228);
+}
+
+h4{
+    font-family: 'rosario-lightitalic';
+    color:rgb(85, 28, 139);
+}
+
+ul{list-style:circle;
+    list-style-position:inside;
+}
+
+header, footer,h1,h2{
+    background-color: beige;
+}
