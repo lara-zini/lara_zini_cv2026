@@ -60,6 +60,10 @@ nav a {
     color: rgb(232, 247, 201);
 }
 
+main {
+    margin: 5% 0;
+}
+
 h1 {
     font-size: 6rem;
 }
@@ -72,7 +76,7 @@ h2 {
 
 h3 {
     font-family: 'bitcount-grid-simple', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
 }
 
@@ -98,13 +102,39 @@ img {
 }
 
 #sobre {
-    margin: 10vh;
+    margin: 0 10% 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#s2 {
+    width: 312px;
 }
 
 #formación {
-    margin: 10vh;
+    margin: 22vh;
 }
 
+#formación article {
+    padding: 5vh;
+}
+
+#f1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#f2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
 
 #experiencia {
     margin: 10vh 0vw;
@@ -126,7 +156,18 @@ img {
 }
 
 #certificación {
-    margin: 10vh;
+    margin: 22vh;
+}
+
+#certificación article {
+    padding: 5vh;
+}
+
+#certificación div {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
