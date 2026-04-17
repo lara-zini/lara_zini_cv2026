@@ -3,7 +3,7 @@
 
 /*AJUSTES GENERALES*/
 @font-face {
-	font-family: 'rosario-reg';
+    font-family: 'rosario-reg';
     src: url(fonts/Rosario-Regular.otf);
     format: (otf);
     font-weight: normal;
@@ -24,28 +24,118 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'bitcount-grid-simple';
+    src: url(fonts/BitcountGridSingle-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*CARACTERISTICAS*/
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(234, 215, 252);
-    font-family:'rosario-reg', sans-serif;
+    background-color: rgb(232, 247, 201);
+    font-family: 'rosario-reg', sans-serif;
     text-align: center;
     text-wrap: balance;
-    color:rgb(2, 2, 2);
-}
-h1, h2, h3{
-    font-family: 'rosario-bold', sans-serif;
-    color: rgb(132, 30, 228);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0%;
 }
 
-h4{
-    font-family: 'rosario-lightitalic';
-    color:rgb(85, 28, 139);
+header {
+    font-family: 'bitcount-grid-simple', serif;
+    background-color: rgb(0, 102, 51);
+    color: rgb(232, 247, 201);
+    padding: 2vh;
 }
 
-ul{list-style:circle;
-    list-style-position:inside;
+nav a {
+    text-decoration: none;
+    color: rgb(232, 247, 201);
 }
 
-header, footer,h1,h2{
-    background-color: beige;
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-family: 'bitcount-grid-simple', serif;
+    font-size: 3rem;
+    color: rgb(0, 102, 51);
+}
+
+h3 {
+    font-family: 'bitcount-grid-simple', serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+h4 {
+    font-family: 'rosario-lightitalic', sans-serif;
+}
+
+ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img {
+    border-radius: 100%;
+
+}
+
+#sobre {
+    margin: 10vh;
+}
+
+#formación {
+    margin: 10vh;
+}
+
+
+#experiencia {
+    margin: 10vh 0vw;
+    color: rgb(232, 247, 201);
+    background-color: rgb(0, 102, 51);
+    padding: 10%;
+}
+
+#experiencia h2,
+#experiencia h3 {
+    color: rgb(232, 247, 201);
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(232, 247, 201);
+    border-radius: 50%;
+}
+
+#certificación {
+    margin: 10vh;
+}
+
+
+footer {
+    background-color: rgb(0, 102, 51);
+    color: rgb(232, 247, 201);
+    padding: 30px;
+}
+
+footer h2 {
+    color: rgb(232, 247, 201);
 }
