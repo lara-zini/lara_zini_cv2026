@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'rosario-reg';
     src: url(fonts/Rosario-Regular.otf);
-    format: (otf);
+    format: (otf); /* el formato va escrito en otro lado y de otra forma */
     font-weight: normal;
     font-style: normal;
 }
@@ -35,7 +35,7 @@
 /*CARACTERISTICAS*/
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* esta propiedad no está funcionando */
 }
 
 body {
@@ -87,13 +87,13 @@ h4 {
 ul {
     list-style: circle;
     list-style-position: inside;
-}
+} /* si las listas van a tener un bullet está bueno que queden marginados a la izquierda, ahora como está la vista es extraña porque se acostumbra a que los items estén alineados entre sí */
 
 
 nav {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* a nivel diseño y accesibilidad estaría bueno que agregues un gap para que en pantallas pequeñas los botones no estén tan cerca entre sí, y también gap se puede usar con dos valores, uno para columnas y otro para filas, en las filas agregales más para que no sea tan difícil tocar los botones en un celu, lo podés probar con tu mismo celu entrando a la página o achicando la pantalla del navegador en la compu */
 }
 
 img {
@@ -125,10 +125,10 @@ img {
 #f1 {
     display: flex;
     justify-content: space-evenly;
-    align-content: flex-start;
+    align-content: flex-start; /* esta propiedad no está generando cambios */
     flex-wrap: wrap;
 }
-
+/* si f1 y f2 tienen exactamente las mismas propiedades lo mejor es definirlas como una class y en el html cambiar los ids por la class que hayas renombrado acá porque es parte fundamental del trabajo no hacer código excesivamente largo y saber reciclar propiedades */
 #f2 {
     display: flex;
     justify-content: space-evenly;
@@ -153,7 +153,7 @@ img {
     height: 400px;
     border: 2px solid rgb(232, 247, 201);
     border-radius: 50%;
-}
+} /* a esta class le vendría bien que le apliques flex así queda centrada respecto al círculo */
 
 #certificación {
     margin: 22vh;

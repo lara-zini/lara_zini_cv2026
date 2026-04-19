@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="estilos.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet"> <!--  -->
     <title>ZiniLara_CV</title>
 </head>
-
+<!--  -->
 <body>
     <header>
         <nav>
@@ -20,13 +20,13 @@
     </header>
 
     <main>
-        <h2> Sobre mi </h2>
+        <h2> Sobre mi </h2> <!-- sería semánticamente correcto que este h2 esté dentro de la section "sobre" porque es parte de esa sección, como hiciste con las otras secciones. lo que sí, cuando lo hagas, vas a tener que recurrir a usar un div para poder aplicar flex de nuevo -->
         <section id="sobre">
-            <article id="s1">
+            <article id="s1">  <!-- no hace falta que esta img esté dentro de un article, siempre está bueno usar menos etiquetas de las necesarias para no complicar la lectura del código -->
                 <img src="img/larazini-cv.jpg" alt="foto de Lara Zini" width="400" height="400" />
             </article>
 
-            <article id="s2">
+            <article id="s2"> <!-- guarda con  el nombre que le ponés a los ids, tienen que ser claros. Ahora dejalos así porque cambiar los nombres de acá y del css es mucho trabajo para mañana, a menos que tengas bastante tiempo, pero cuando trabajen en grupo van a tener que entenderse entre todos del grupo -->
 
                 <h4> ¡Hola, soy Lara! </h4>
                 <p> Nací en Avellaneda, Buenos Aires en el 2003.
@@ -40,10 +40,10 @@
         </section>
 
         <section id="formación">
-            <h2> Formación académica </h2>
+            <h2> Formación académica </h2> <!-- para poder alinear estos dos elementos te hace falta un elemento padre que te ayude a ordenar los dos articles, te va a venir muy bien un div, igual que en la sección anterior, y como vas a usarlo en dos lugares, ya tenés el indicio de que con una class vas a poder resolver ambos casos -->
             <article>
                 <h3> Licenciatura en Diseño y Comunicación Visual </h3>
-                <div id="f1">
+                <div id="f1"> <!-- este div podría ser una lista -->
                     <h4> Universidad Nacional de Lanús</h4>
                     <h4>2022 - actualidad</h4>
                 </div>
@@ -51,7 +51,7 @@
             </article>
             <article>
                 <h3> Educación secundaria con especialización en Ciencias Sociales </h3>
-                <div id="f2">
+                <div id="f2"> <!-- este div podría ser una lista -->
                     <h4> Instituto Pio XII de Avellaneda</h4>
                     <h4>2016 - 2021</h4>
                 </div>
@@ -91,21 +91,21 @@
             <h2>Certificación</h2>
             <article>
                 <h3>Adobe Illustrator/Photoshop</h3>
-                <div>
+                <div> <!-- este div podría ser una lista -->
                     <h4>Coderhouse</h4>
                     <h4>2024</h4>
                 </div>
             </article>
             <article>
                 <h3>Diseño UX/UI</h3>
-                <div>
+                <div> <!-- este div podría ser una lista -->
                     <h4>Coderhouse</h4>
                     <h4>2024</h4>
                 </div>
             </article>
             <article>
                 <h3>Fotografía inicial</h3>
-                <div>
+                <div> <!-- este div podría ser una lista -->
                     <h4>Ref producciones</h4>
                     <h4>2019</h4>
                 </div>
@@ -116,7 +116,7 @@
     <footer id="contacto">
         <h2> Contacto </h2>
         <p> Lara Zini </p>
-        <p> larazini08@gmail.com </p>
+        <p> larazini08@gmail.com </p> <!-- completá el contacto con la clase de etiquetas a para que quede utilizable -->
     </footer>
 </body>
 
