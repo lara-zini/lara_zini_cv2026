@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="estilos.css" rel="stylesheet"> <!--  -->
+    <link href="estilos.css" rel="stylesheet">
     <title>ZiniLara_CV</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<!--  -->
+
 <body>
     <header>
         <nav>
             <a href="#sobre"> Sobre mi </a>
             <a href="#formación"> Formación académica </a>
             <a href="#experiencia"> Experiencia laboral </a>
+            <a href="#habilidades">Habilidades</a>
             <a href="#certificación"> Certificación </a>
             <a href="#contacto"> Contacto </a>
         </nav>
@@ -20,95 +22,139 @@
     </header>
 
     <main>
-        <h2> Sobre mi </h2> <!-- sería semánticamente correcto que este h2 esté dentro de la section "sobre" porque es parte de esa sección, como hiciste con las otras secciones. lo que sí, cuando lo hagas, vas a tener que recurrir a usar un div para poder aplicar flex de nuevo -->
         <section id="sobre">
-            <article id="s1">  <!-- no hace falta que esta img esté dentro de un article, siempre está bueno usar menos etiquetas de las necesarias para no complicar la lectura del código -->
-                <img src="img/larazini-cv.jpg" alt="foto de Lara Zini" width="400" height="400" />
-            </article>
-
-            <article id="s2"> <!-- guarda con  el nombre que le ponés a los ids, tienen que ser claros. Ahora dejalos así porque cambiar los nombres de acá y del css es mucho trabajo para mañana, a menos que tengas bastante tiempo, pero cuando trabajen en grupo van a tener que entenderse entre todos del grupo -->
-
-                <h4> ¡Hola, soy Lara! </h4>
-                <p> Nací en Avellaneda, Buenos Aires en el 2003.
-                    Me encuentro en búsqueda de un puesto que me ayude a potenciar mi conocimiento en el area del diseño
-                    y
-                    de la comunicación visual. Me considero una persona muy resolutiva, suelo resaltar por mi gran
-                    creatividad y organización, tanto en proyectos individuales como en co-creación.
-                </p>
-            </article>
-
+            <h2> Sobre mi </h2>
+            <div>
+                <img src="img/larazini-cv.jpg" alt="foto de Lara Zini" width="400px" height="400px" />
+                <article>
+                    <h4> ¡Hola, soy Lara! </h4>
+                    <p> Nací en Avellaneda, Buenos Aires en el 2003. Estoy finalizando mi Licenciatura en Diseño y
+                        Comunicación Visual y me encuentro en búsqueda de un puesto que me ayude a potenciar mi
+                        conocimiento en el área.
+                    </p>
+                    <p>
+                        Me considero una persona muy resolutiva, suelo resaltar por mi gran creatividad y organización,
+                        tanto en proyectos individuales como en co-creación.
+                    </p>
+                </article>
+            </div>
         </section>
 
         <section id="formación">
-            <h2> Formación académica </h2> <!-- para poder alinear estos dos elementos te hace falta un elemento padre que te ayude a ordenar los dos articles, te va a venir muy bien un div, igual que en la sección anterior, y como vas a usarlo en dos lugares, ya tenés el indicio de que con una class vas a poder resolver ambos casos -->
-            <article>
-                <h3> Licenciatura en Diseño y Comunicación Visual </h3>
-                <div id="f1"> <!-- este div podría ser una lista -->
-                    <h4> Universidad Nacional de Lanús</h4>
-                    <h4>2022 - actualidad</h4>
-                </div>
+            <h2> Formación académica </h2>
+            <div>
+                <article>
+                    <h3> Licenciatura en Diseño y Comunicación Visual </h3>
+                    <ul class="lista-espaciada">
+                        <li> Universidad Nacional de Lanús</li>
+                        <li>2022 - actualidad</li>
+                    </ul>
 
-            </article>
-            <article>
-                <h3> Educación secundaria con especialización en Ciencias Sociales </h3>
-                <div id="f2"> <!-- este div podría ser una lista -->
-                    <h4> Instituto Pio XII de Avellaneda</h4>
-                    <h4>2016 - 2021</h4>
-                </div>
-            </article>
+                </article>
+                <article>
+                    <h3> Educación secundaria con especialización en Ciencias Sociales </h3>
+                    <ul class="lista-espaciada">
+                        <li> Instituto Pio XII de Avellaneda</li>
+                        <li>2016 - 2021</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
         <section id="experiencia">
             <h2> Experiencia laboral </h2>
+            <div>
+                <article class="circulo">
+                    <h3> Recepcionista </h3>
+                    <h4> Ab Nails, 2023-2024 </h4>
+                    <ul>
+                        <li> Atención al cliente</li>
+                        <li> Organización de agenda y turnos</li>
+                        <li> Encargada de caja y facturación</li>
+                        <li>Apertura y cierre del local</li>
+                        <li>Trato con proveedores</li>
+                        <li>Manejo de redes sociales</li>
+                        <li>Empaque y envio de productos</li>
+                    </ul>
+                </article>
 
-            <article class="circulo">
-                <h3> Recepcionista </h3>
-                <h4> Ab Nails, 2023-2024 </h4>
-                <ul>
-                    <li> Atención al cliente</li>
-                    <li> Organización de agenda y turnos</li>
-                    <li> Encargada de caja y facturación</li>
-                    <li>Apertura y cierre del local</li>
-                    <li>Trato con proveedores</li>
-                    <li>Manejo de redes sociales</li>
-                    <li>Empaque y envio de productos</li>
-                </ul>
-            </article>
-
-            <article class="circulo">
-                <h3> Fotógrafa </h3>
-                <h4> Freelancer, 2019-2022 </h4>
-                <ul>
-                    <li>Armado de set</li>
-                    <li>Toma de fotografías</li>
-                    <li>Edición y retoques</li>
-                    <li>Atención al cliente</li>
-                    <li>Manejo de redes sociales</li>
-                </ul>
-            </article>
+                <article class="circulo">
+                    <h3> Fotógrafa </h3>
+                    <h4> Freelancer, 2019-2022 </h4>
+                    <ul>
+                        <li>Armado de set</li>
+                        <li>Toma de fotografías</li>
+                        <li>Edición y retoques</li>
+                        <li>Atención al cliente</li>
+                        <li>Manejo de redes sociales</li>
+                    </ul>
+                </article>
+            </div>
         </section>
+
+        <section id="habilidades">
+            <h2> Habilidades </h2>
+            <h3>Software</h3>
+            <div>
+                <article>
+                    <h4>Adobe Illustrator</h4>
+                    <img class="porcentaje" src="img/habilidades-1.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+                <article>
+                    <h4>Adobe Photoshop</h4>
+                    <img class="porcentaje" src="img/habilidades-2.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+                <article>
+                    <h4>Adobe Indesign</h4>
+                    <img class="porcentaje" src="img/habilidades-2.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+                <article>
+                    <h4>Figma</h4>
+                    <img class="porcentaje" src="img/habilidades-1.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+            </div>
+
+            <h3>Idiomas</h3>
+            <div>
+                <article>
+                    <h4>Español nativo</h4>
+                    <img class="porcentaje" src="img/habilidades-1.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+                <article>
+                    <h4>Inglés</h4>
+                    <img class="porcentaje" src="img/habilidades-2.png" alt="Nivel alto de manejo" width="89px"
+                        height="24px" />
+                </article>
+            </div>
+        </section>
+
         <section id="certificación">
             <h2>Certificación</h2>
             <article>
                 <h3>Adobe Illustrator/Photoshop</h3>
-                <div> <!-- este div podría ser una lista -->
-                    <h4>Coderhouse</h4>
-                    <h4>2024</h4>
-                </div>
+                <ul class="lista-espaciada">
+                    <li>Coderhouse</li>
+                    <li>2024</li>
+                </ul>
             </article>
             <article>
                 <h3>Diseño UX/UI</h3>
-                <div> <!-- este div podría ser una lista -->
-                    <h4>Coderhouse</h4>
-                    <h4>2024</h4>
-                </div>
+                <ul class="lista-espaciada">
+                    <li>Coderhouse</li>
+                    <li>2024</li>
+                </ul>
             </article>
             <article>
                 <h3>Fotografía inicial</h3>
-                <div> <!-- este div podría ser una lista -->
-                    <h4>Ref producciones</h4>
-                    <h4>2019</h4>
-                </div>
+                <ul class="lista-espaciada">
+                    <li>Ref producciones</li>
+                    <li>2019</li>
+                </ul>
             </article>
         </section>
     </main>
@@ -116,7 +162,7 @@
     <footer id="contacto">
         <h2> Contacto </h2>
         <p> Lara Zini </p>
-        <p> larazini08@gmail.com </p> <!-- completá el contacto con la clase de etiquetas a para que quede utilizable -->
+        <a href="#"> larazini08@gmail.com </a>
     </footer>
 </body>
 
