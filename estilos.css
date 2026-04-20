@@ -219,3 +219,7 @@ footer a {
     color: rgb(232, 247, 201);
     text-decoration: none;
 }
+
+footer p {
+    font-family: 'rosario-bold', sans-serif;
+}
