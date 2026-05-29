@@ -3,223 +3,313 @@
 
 /*AJUSTES GENERALES*/
 @font-face {
-    font-family: 'rosario-reg';
-    src: url(fonts/Rosario-Regular.otf);
+    font-family: 'alegreyasans-regular';
+    src: url(fonts/AlegreyaSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'rosario-bold';
-    src: url(fonts/Rosario-Bold.otf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'rosario-lightitalic';
-    src: url(fonts/Rosario-LightItalic.otf);
+    font-family: 'alegreyasans-lightitalic';
+    src: url(fonts/AlegreyaSans-LightItalic.ttf);
     font-weight: lighter;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'bitcount-grid-simple';
-    src: url(fonts/BitcountGridSingle-Regular.ttf);
+    font-family: 'alegreyasans-mediumitalic';
+    src: url(fonts/AlegreyaSans-MediumItalic.ttf);
+    font-weight: medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'alegreyasans-bolditalic';
+    src: url(fonts/AlegreyaSans-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'alegreyasans-black';
+    src: url(fonts/AlegreyaSans-Black.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alegreyasansSC-regular';
+    src: url(fonts/AlegreyaSansSC-Regular.ttf);
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alegreyasansSC-bold';
+    src: url(fonts/AlegreyaSansSC-Bold.ttf);
+    font-weight: bold;
     font-style: normal;
 }
 
 
 /*CARACTERISTICAS*/
 
-body {
-    background-color: rgb(232, 247, 201);
-    font-family: 'rosario-reg', sans-serif;
-    text-align: center;
+body{
+    background-color:#F3F3F3;
+    font-family:'alegreyasans-regular', sans-serif;
+    font-size: 1rem;
     text-wrap: balance;
-    color: rgb(0, 0, 0);
+    color: #042222;
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
-header {
-    font-family: 'bitcount-grid-simple', serif;
-    background-color: rgb(0, 102, 51);
-    color: rgb(232, 247, 201);
-    padding: 15px;
+
+/*ESTILOS TIPOGRÁFICOS*/
+
+h1{
+    font-family: 'alegreyasans-black', sans-serif;
+    font-size: 4.3rem;
+    margin: 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: rgb(232, 247, 201);
+h2{
+    font-family: 'alegreyasansSC-bold', sans-serif;
+    font-size: 2.8rem;
+    margin: 0;
 }
 
-h1 {
-    font-size: 6rem;
-    margin: 30px;
+h3{
+    font-family: 'alegreyasans-bolditalic', sans-serif;
+    font-size: 2.4rem;
+    margin: 0
 }
 
-h2 {
-    font-family: 'bitcount-grid-simple', serif;
-    font-size: 3rem;
-    color: rgb(0, 102, 51);
+h4{
+    font-family: 'alegreyasansSC-regular', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
 }
 
-h3 {
-    font-family: 'bitcount-grid-simple', serif;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+h5{
+    font-family: 'alegreyasansSC-bold', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
 }
 
-h4 {
-    font-family: 'rosario-lightitalic', sans-serif;
+h6{
+    font-family: 'alegreyasans-mediumitalic', sans-serif;
+    font-size: 1.4rem;
+    margin: 0;
 }
 
-nav {
+aclaracion{
+    font-family: 'alegreyasans-lightitalic', sans-serif;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+aclaracion2{
+    font-family: 'alegreyasans-mediumitalic', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 0;
+}
+
+
+/*TODOS LOS HTML*/
+
+header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 70px;
-}
-
-main {
-    padding: 60px 0;
-}
-
-
-#sobre {
-    margin: 70px;
-}
-
-#sobre article {
-    max-width: 567px;
-}
-
-img {
-    border-radius: 100%;
-}
-
-#sobre div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-
-#formación {
-    margin: 70px;
-}
-
-#formación div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-#formación article {
-    padding: 15px;
-}
-
-.lista-espaciada {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 10px;
-}
-
-#experiencia {
-    color: rgb(232, 247, 201);
-    background-color: rgb(0, 102, 51);
-    padding: 30px 50px 70px 50px;
-}
-
-#experiencia h2,
-#experiencia h3 {
-    color: rgb(232, 247, 201);
-}
-
-#experiencia div {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
+    padding: 20px 0;
+    margin: 0 80px;
     gap: 40px;
 }
 
-.circulo {
-    width: 400px;
-    height: 400px;
-    border: 2px solid rgb(232, 247, 201);
-    border-radius: 50%;
+nav{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px
 }
 
-ul {
+a{
+    text-decoration: none;
+    color: #042222;
+}
+
+a:hover{
+    color: #00E686;
+}
+
+.boton{
+    color: #00E686;
+    border-width: 3px 12px ;
+    border-color: #042222;
+}
+
+.boton:hover{
+    color: #F3F3F3;
+    background-color: #00E686;
+}
+
+.boton-negro{
+    border-width: 3px 12px ;
+    border-color: #042222;
+}
+
+.boton-negro:hover{
+    color: #00E686;
+    background-color: #042222;
+}
+
+#isotipo:hover{
+    content: url(img/isotipo-verde.png);
+    width: 32px; height: 32px;
+}
+
+ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#habilidades {
-    padding: 60px;
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin: 0 80px;
 }
 
-#habilidades h3 {
-    padding: 20px 0 0 0;
+#instagram:hover{
+    content: url(img/icono-instagram-verde.png);
 }
 
-#habilidades div {
+#mail:hover{
+    content: url(img/icono-mail-verde.png);
+}
+
+#redes{
+    display: flex;
+    gap: 30px;
+}
+
+
+/*INDEX HTML*/
+section{
+padding: 20px 0;
+}
+
+#bienvenida{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 80px;
+}
+
+#bienvenida article{
+    display: flex;
+    max-width: 431px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#proyectos-destacados{
+    background-color: #00E686;
+    padding: 20px 80px;
+}
+
+#proyectos-destacados h2{
+    color: #042222;
+}
+
+#signos-pregunta{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 80px;
+}
+
+#signos-pregunta article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*SOBRE MI HTML*/
+
+#sobremi{
+    background-color: #00E686;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
-    column-gap: 50px;
-    row-gap: 15px;
+    gap: 40px;
 }
 
-#habilidades article {
+#sobremi article{
+    max-width: 514px;
+}
+
+h2{
+    color: #00E686;
+}
+
+#informacion{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.porcentaje {
-    border-radius: 0%;
+#formacion{
+    max-width: 388px;
 }
 
-#certificación {
-    padding: 40px;
+/*PROYECTOS HTML*/
+
+
+/*CONTACTO HTML*/
+
+#contacto{
+    background-color: #00E686;
+    padding: 20px 80px;
 }
 
-#certificación article {
-    padding: 15px;
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
 }
 
-
-footer {
-    background-color: rgb(0, 102, 51);
-    color: rgb(232, 247, 201);
-    padding: 30px;
+label{
+    display: block;
+    height: 25px;
 }
 
-footer h2,
-footer a {
-    color: rgb(232, 247, 201);
-    text-decoration: none;
+input{
+    width: 100%;
+    height: 30px;
+    border-width: 3px 12px ;
+    border-color: #042222;
+    background-color: #00E686;
 }
 
-footer p {
-    font-family: 'rosario-bold', sans-serif;
+textarea{
+    width: 100%;
+    height: 130px;
+    border-width: 3px 12px ;
+    border-color: #042222;
+    background-color: #00E686;
 }

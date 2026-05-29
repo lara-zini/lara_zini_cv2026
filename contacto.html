@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="estilos.css" rel="stylesheet">
+    <title>ZiniLara_Porfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a id="isotipo" href="index.html" target="_self"> <img src="img/isotipo-negro.png" alt="isotipo" width="32px"
+                height="32px" /> </a>
+        <nav>
+            <a href="sobremi.html" target="_self">
+                <h4>sobre mi</h4>
+            </a>
+            <a href="proyectos.html" target="_self">
+                <h4>proyectos</h4>
+            </a>
+            <a href="contacto.html" target="_self">
+                <h5>contacto</h5>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h1>¿Dudas? Consultas? Propuestas?</h1>
+            <h3>Contame sobre vos:</h3>
+            <form method="post" action="" target="_blank" enctype="text/plain">
+                <div class="datos">
+                    <label for="nombre">
+                        <h4>nombre y apellido*</h4>
+                    </label>
+                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Sofia Martinez" required>
+                    <label for="mail">
+                        <h4>mail*</h4>
+                    </label>
+                    <input type="text" name="mail" id="mail" maxlength="30" placeholder="sofiamartinez@gmail.com"
+                        required>
+                    <label for="telefono">
+                        <h4>telefono*</h4>
+                    </label>
+                    <input type="tel" name="telefono" id="telefono" maxlength="30" placeholder="1122334455" required>
+                </div>
+
+                <div class="mensaje">
+                    <label for="mensaje">
+                        <h4>mensaje*</h4>
+                    </label>
+                    <textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
+                    <input type="submit" value="enviar" class="enviar">
+                </div>
+            </form>
+            <p>*campos obligatorios</p>
+
+            <a class="boton-negro" href="#">
+                <h4>enviar</h4>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <ul id="redes">
+            <li>
+                <a id="instagram" href="https://www.instagram.com/larazini.dg/?hl=es"><img
+                        src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" height="42px" /></a>
+            </li>
+            <li>
+                <a id="mailusuario" href="mailto:larazini08@gmail.com"><img src="img/icono-mail-negro.png"
+                        alt="icono mail" width="42px" height="42px" /></a>
+            </li>
+        </ul>
+        <ul id="legales">
+            <li>
+                <aclaracion>Todos los derechos reservados</aclaracion>
+            </li>
+            <li>
+                <aclaracion2>Lara Zini 2026</aclaracion2>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
