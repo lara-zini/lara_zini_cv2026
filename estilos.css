@@ -56,7 +56,7 @@
 body{
     background-color:#F3F3F3;
     font-family:'alegreyasans-regular', sans-serif;
-    font-size: 1rem;
+    font-size: 1rem; /* no está bueno establecer un tamaño tipográfico desde el body porque vas a establecer tamaños distintos en toda la página */
     text-wrap: balance;
     color: #042222;
     margin: 0;
@@ -150,7 +150,7 @@ a:hover{
 .boton{
     color: #00E686;
     border-width: 3px 12px ;
-    border-color: #042222;
+    border-color: #042222; /* para que se vea el borde te falta establecer qué tipo de apariencia va a tener con border-style y uno de los valores que te tira */
 }
 
 .boton:hover{
@@ -264,13 +264,13 @@ h2{
 
 #informacion{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* este espacio en el medio queda muy grande en pantallas grandes, te conviene aprovechar el gap y directamente centrar el contenido para que no queden columnas tan alejadas */
     flex-wrap: wrap;
     gap: 40px;
 }
 
 #formacion{
-    max-width: 388px;
+    max-width: 388px; /* está bien que se lo apliques a formación, pero en proyectos grandes te conviene aplicarlo sobre una etiqueta más general, por ej, los div que están encolumnando las secciones podrían empezar a tener una class para poder agregarle este máximo y, si algún día cambia el contenido, el diseño sigue coherente en tamaños */
 }
 
 /*PROYECTOS HTML*/
