@@ -11,7 +11,7 @@
 <body>
     <header>
         <a id="isotipo" href="index.html" target="_self"> <img src="img/isotipo-negro.png" alt="isotipo" width="32px"
-                height="32px" /> </a>
+                height="32px" /> </a> <!-- la razón por la que se cambia el tamaño del ícono es porque el hover lo tiene la img y no la etiqueta padre, te recomiendo que para este caso utilices una etiqueta div vacía de contenido con propiedades css, y desde css le ponés bg junto a lo mismo con hover y distindo bg, y no con content. -->
         <nav>
             <a href="sobremi.html" target="_self"> <h4>sobre mi</h4></a>
             <a href="proyectos.html" target="_self"> <h4>proyectos</h4></a>
@@ -25,7 +25,7 @@
             <article>
                 <h1>¡Hola, soy Lara!</h1>
                 <h6>Estudio Diseño y Comunicación Visual en la UNLa y vivo en Avellaneda, Buenos Aires (Arg).</h6>
-                <a class="boton" href="#">
+                <a class="boton" href="#"> <!-- no te olvides de poner el href! -->
                     <h4>conoceme</h4>
                 </a>
             </article>
@@ -33,7 +33,7 @@
         </section>
         <section id="proyectos-destacados">
             <h2>proyectos destacados</h2>
-            <a class="boton-negro" href="#">
+            <a class="boton-negro" href="#"> <!-- no te olvides de poner el href! -->
                 <h4>ver más</h4>
             </a>
         </section>
@@ -50,9 +50,9 @@
     </main>
 
     <footer>
-        <ul id="redes">
+        <ul id="redes"> <!-- cuando apliques links a sitios externos te conviene agregar el atributo target="_blank" para que se abra en una pestaña distinta y no se pierda tu sitio -->
             <li>
-                <a id="instagram" href="https://www.instagram.com/larazini.dg/?hl=es"><img src="img/icono-instagram-negro.png" alt="icono instagram" width="42px"
+                <a id="instagram" href="https://www.instagram.com/larazini.dg/?hl=es"><img src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" 
                         height="42px" /></a>
             </li>
             <li>
@@ -61,7 +61,7 @@
         </ul>
         <ul id="legales">
             <li>
-                <aclaracion>Todos los derechos reservados</aclaracion>
+                <aclaracion>Todos los derechos reservados</aclaracion> <!--esta etiqueta no existe!!!  -->
             </li>
             <li>
                 <aclaracion2>Lara Zini 2026</aclaracion2>
