@@ -3,51 +3,161 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lara Zini">
+    <meta name="keywords" content="diseñador gráfico, branding, identidad de marca, diseño editorial, fotógrafo">
     <link href="estilos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
     <title>ZiniLara_Porfolio</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
     <header>
-        <a id="isotipo" href="index.html" target="_self"> <img src="img/isotipo-negro.png" alt="isotipo" width="32px"
-                height="32px" /> </a>
+        <a href="index.html" target="_self">
+            <div class="isotipo"></div>
+        </a>
         <nav>
-            <a href="sobremi.html" target="_self"> <h4>sobre mi</h4></a>
-            <a href="proyectos.html" target="_self"> <h5>proyectos</h5></a>
-            <a href="contacto.html" target="_self"><h4>contacto</h4></a>
+            <a href="sobremi.html" target="_self">
+                <h4>sobre mi</h4>
+            </a>
+            <a href="proyectos.html" target="_self">
+                <h5>proyectos</h5>
+            </a>
+            <a href="contacto.html" target="_self">
+                <h4>contacto</h4>
+            </a>
         </nav>
     </header>
 
     <main>
-        <h1>Mis proyectos</h1>
-        <section id="identidad-marca">
-            <article>
-                <img>
-                <h4></h4>
+
+        <section id="fijo">
+            <ul id="fijo-ul">
+                <li>
+                    <a class="instagram" href="https://www.instagram.com/larazini.dg/?hl=es" target="_blank"><img
+                            src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" height="42px" /></a>
+                </li>
+                <li>
+                    <a class="mail" href="mailto:larazini08@gmail.com" target="_blank"><img src="img/icono-mail-negro.png"
+                            alt="icono mail" width="42px" height="42px" /></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h1>Mis proyectos</h1>
+            <article class="galeria">
+                <div id="galeria-disco">
+                    <a href="img/proyectos/disco/disco.jpg" data-fancybox="disco" data-caption="Tapa de disco"
+                        width="1160px" height="870px"><img src="img/proyectos/disco/disco-thumbnal.jpg" alt="disco"
+                            width="410px" height="308px"></a>
+                    <a href="img/proyectos/disco/disco-1.jpg" data-fancybox="disco" data-caption="Contratapa de disco"
+                        width="1160px" height="870px"></a>
+                </div>
+
+                <div id="galeria-landscape">
+                    <a href="img/proyectos/landscape/landscape.jpg" data-fancybox="landscape"
+                        data-caption="Afiche landscape" width="1160px" height="870px"><img
+                            src="img/proyectos/landscape/landscape-thumbnal.jpg" alt="landscape" width="410px"
+                            height="308px"></a>
+                    <a href="img/proyectos/landscape/landscape-1.jpg" data-fancybox="landscape"
+                        data-caption="Primer acercamiento" width="615px" height="870px"></a>
+                    <a href="img/proyectos/landscape/landscape-2.jpg" data-fancybox="landscape"
+                        data-caption="Segundo acercamiento" width="615px" height="870px"></a>
+                    <a href="img/proyectos/landscape/landscape-3.jpg" data-fancybox="landscape"
+                        data-caption="Tercer acercamiento" width="615px" height="870px"></a>
+                    <a href="img/proyectos/landscape/landscape-4.jpg" data-fancybox="landscape"
+                        data-caption="Cuarto acercamiento" width="615px" height="870px"></a>
+                </div>
+            </article>
+
+            <article class="galeria">
+                <div id="galeria-libro">
+                    <a href="img/proyectos/libro/libro.jpg" data-fancybox="libro" data-caption="Diseño editorial"
+                        width="1160px" height="870px"><img src="img/proyectos/libro/libro-thumbnal.jpg" alt="libro"
+                            width="410px" height="308px"></a>
+                    <a href="img/proyectos/libro/libro-1.jpg" data-fancybox="libro"
+                        data-caption="Composición de doble página" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-2.jpg" data-fancybox="libro"
+                        data-caption="Estampillas ilustradas" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-3.jpg" data-fancybox="libro"
+                        data-caption="Composición de doble página" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-4.jpg" data-fancybox="libro" data-caption="Tapa y contratapa"
+                        width="1160px" height="870px"></a>
+                </div>
+
+                <div id="galeria-festival">
+                    <a href="img/proyectos/festival/festival.jpg" data-fancybox="festival"
+                        data-caption="Cronograma frente" width="1160px" height="870px"><img
+                            src="img/proyectos/festival/festival-thumbnal.jpg" alt="festival" width="410px"
+                            height="308px"></a>
+                    <a href="img/proyectos/festival/festival-1.jpg" data-fancybox="festival"
+                        data-caption="Cronograma dorso" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/festival/festival-2.jpg" data-fancybox="festival" data-caption="Afiche"
+                        width="1160px" height="870px"></a>
+                    <a href="img/proyectos/festival/festival-3.jpg" data-fancybox="festival" data-caption="Postales"
+                        width="1160px" height="870px"></a>
+                </div>
+            </article>
+
+            <article class="galeria">
+                <div id="galeria-fotoproducto">
+                    <a href="img/proyectos/fotoproducto/fotoproducto.jpg" data-fancybox="fotoproducto"
+                        data-caption="Vidrio" width="653px" height="870px"><img
+                            src="img/proyectos/fotoproducto/fotoproducto-thumbnal.jpg" alt="fotoproducto" width="410px"
+                            height="308px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-1.jpg" data-fancybox="fotoproducto"
+                        data-caption="Metal" width="652px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-2.jpg" data-fancybox="fotoproducto"
+                        data-caption="Cuero" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-3.jpg" data-fancybox="fotoproducto"
+                        data-caption="Orgánico" width="653px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-4.jpg" data-fancybox="fotoproducto"
+                        data-caption="Orgánico" width="870px" height="870px"></a>
+                </div>
+
+                <div id="galeria-modelo">
+                    <a href="img/proyectos/modelo/modelo.jpg" data-fancybox="modelo"
+                        data-caption="Sesión de fotos en exterior" width="580px" height="870px"><img
+                            src="img/proyectos/modelo/modelo-thumbnal.jpg" alt="modelo" width="410px"
+                            height="308px"></a>
+                    <a href="img/proyectos/modelo/modelo-1.jpg" data-fancybox="modelo"
+                        data-caption="Sesión de fotos en exterior" width="580px" height="870px"></a>
+                    <a href="img/proyectos/modelo/modelo-2.jpg" data-fancybox="modelo"
+                        data-caption="Sesión de fotos en estudio" width="580px" height="870px"></a>
+                    <a href="img/proyectos/modelo/modelo-3.jpg" data-fancybox="modelo"
+                        data-caption="Sesión de fotos en estudio" width="580px" height="870px"></a>
+                </div>
             </article>
         </section>
     </main>
 
     <footer>
-        <ul id="redes">
+        <ul class="redes">
             <li>
-                <a id="instagram" href="https://www.instagram.com/larazini.dg/?hl=es"><img src="img/icono-instagram-negro.png" alt="icono instagram" width="42px"
-                        height="42px" /></a>
+                <a class="instagram" href="https://www.instagram.com/larazini.dg/?hl=es" target="_blank"><img
+                        src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" height="42px" /></a>
+                <p>@larazini.dg</p>
             </li>
+            <li><p>//</p></li>
             <li>
-                <a id="mail" href="mailto:larazini08@gmail.com"><img src="img/icono-mail-negro.png" alt="icono mail" width="42px" height="42px" /></a>
+                <a class="mail" href="mailto:larazini08@gmail.com" target="_blank"><img src="img/icono-mail-negro.png"
+                        alt="icono mail" width="42px" height="42px" /></a>
+                <p>larazini08@gmail.com</p>
             </li>
         </ul>
         <ul id="legales">
             <li>
-                <aclaracion>Todos los derechos reservados</aclaracion>
+                <p>Todos los derechos reservados</p>
             </li>
             <li>
-                <aclaracion2>Lara Zini 2026</aclaracion2>
+                <p>Lara Zini 2026</p>
             </li>
         </ul>
     </footer>
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
 </body>
 
 </html>

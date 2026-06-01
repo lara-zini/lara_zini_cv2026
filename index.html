@@ -3,71 +3,142 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lara Zini">
+    <meta name="keywords" content="diseñador gráfico, branding, identidad de marca, diseño editorial, fotógrafo">
     <link href="estilos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
     <title>ZiniLara_Porfolio</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
     <header>
-        <a id="isotipo" href="index.html" target="_self"> <img src="img/isotipo-negro.png" alt="isotipo" width="32px"
-                height="32px" /> </a> <!-- la razón por la que se cambia el tamaño del ícono es porque el hover lo tiene la img y no la etiqueta padre, te recomiendo que para este caso utilices una etiqueta div vacía de contenido con propiedades css, y desde css le ponés bg junto a lo mismo con hover y distindo bg, y no con content. -->
+        <a href="index.html" target="_self">
+            <div class="isotipo"></div>
+        </a>
         <nav>
-            <a href="sobremi.html" target="_self"> <h4>sobre mi</h4></a>
-            <a href="proyectos.html" target="_self"> <h4>proyectos</h4></a>
-            <a href="contacto.html" target="_self"><h4>contacto</h4></a>
+            <a href="sobremi.html" target="_self">
+                <h4>sobre mi</h4>
+            </a>
+            <a href="proyectos.html" target="_self">
+                <h4>proyectos</h4>
+            </a>
+            <a href="contacto.html" target="_self">
+                <h4>contacto</h4>
+            </a>
         </nav>
     </header>
 
     <main>
+        <section id="fijo">
+            <ul id="fijo-ul">
+                <li>
+                    <a class="instagram" href="https://www.instagram.com/larazini.dg/?hl=es" target="_blank"><img
+                            src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" height="42px" /></a>
+                </li>
+                <li>
+                    <a class="mail" href="mailto:larazini08@gmail.com" target="_blank"><img
+                            src="img/icono-mail-negro.png" alt="icono mail" width="42px" height="42px" /></a>
+                </li>
+            </ul>
+        </section>
+
         <section id="bienvenida">
-            <img src="img/logotipo-lara.png" alt="logotipo de Lara Zini 1" width="215px" height="710px" />
+            <img id="logo-lara" src="img/index/logotipo-lara.png" alt="Lara" width="215px" height="710px" />
             <article>
-                <h1>¡Hola, soy Lara!</h1>
-                <h6>Estudio Diseño y Comunicación Visual en la UNLa y vivo en Avellaneda, Buenos Aires (Arg).</h6>
-                <a class="boton" href="#"> <!-- no te olvides de poner el href! -->
-                    <h4>conoceme</h4>
-                </a>
+                <div>
+                    <h1>¡Hola, soy Lara!</h1>
+                    <h6>Estudio Diseño y Comunicación Visual en la UNLa y vivo en Avellaneda, Buenos Aires (Arg).</h6>
+                </div>
+                <div id="boton-bienvenida">
+                    <a class="boton" href="sobremi.html">
+                        <h4>conoceme</h4>
+                    </a>
+                </div>
             </article>
-            <img src="img/logotipo-zini.png" alt="logotipo de Lara Zini 2" width="215px" height="710px" />
+            <img id="logo-zini" src="img/index/logotipo-zini.png" alt="Zini" width="215px" height="710px" />
         </section>
         <section id="proyectos-destacados">
             <h2>proyectos destacados</h2>
-            <a class="boton-negro" href="#"> <!-- no te olvides de poner el href! -->
-                <h4>ver más</h4>
-            </a>
+
+            <article class="galeria">
+                <div id="galeria-libro">
+                    <a href="img/proyectos/libro/libro.jpg" data-fancybox="libro" data-caption="Diseño editorial"
+                        width="1160px" height="870px"><img src="img/proyectos/libro/libro-thumbnal.jpg" alt="libro"
+                            width="410px" height="308px"></a>
+                    <a href="img/proyectos/libro/libro-1.jpg" data-fancybox="libro"
+                        data-caption="Composición de doble página" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-2.jpg" data-fancybox="libro"
+                        data-caption="Estampillas ilustradas" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-3.jpg" data-fancybox="libro"
+                        data-caption="Composición de doble página" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/libro/libro-4.jpg" data-fancybox="libro" data-caption="Tapa y contratapa"
+                        width="1160px" height="870px"></a>
+                </div>
+
+                <div id="galeria-fotoproducto">
+                    <a href="img/proyectos/fotoproducto/fotoproducto.jpg" data-fancybox="fotoproducto"
+                        data-caption="Vidrio" width="653px" height="870px"><img
+                            src="img/proyectos/fotoproducto/fotoproducto-thumbnal.jpg" alt="fotoproducto" width="410px"
+                            height="308px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-1.jpg" data-fancybox="fotoproducto"
+                        data-caption="Metal" width="652px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-2.jpg" data-fancybox="fotoproducto"
+                        data-caption="Cuero" width="1160px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-3.jpg" data-fancybox="fotoproducto"
+                        data-caption="Orgánico" width="653px" height="870px"></a>
+                    <a href="img/proyectos/fotoproducto/fotoproducto-4.jpg" data-fancybox="fotoproducto"
+                        data-caption="Orgánico" width="870px" height="870px"></a>
+                </div>
+            </article>
+
+            <div>
+                <a class="boton-negro" href="proyectos.html">
+                    <h4>ver más</h4>
+                </a>
+            </div>
         </section>
         <section id="signos-pregunta">
-            <img src="img/icono-pregunta-apertura.png" alt="signo pregunta apertura" width="120px" height="178px" />
+            <img id="signo-abre" src="img/index/icono-pregunta-apertura.png" alt="signo pregunta apertura" width="120px"
+                height="178px" />
             <article>
                 <h6>¿Dudas? ¿Consultas? ¿Propuestas?</h6>
-                <a class="boton" href="#">
+                <a class="boton" href="contacto.html">
                     <h4>charlemos</h4>
                 </a>
             </article>
-            <img src="img/icono-pregunta-cierre.png" alt="signo pregunta cierre" width="120px" height="178px" />
+            <img id="signo-cierra" src="img/index/icono-pregunta-cierre.png" alt="signo pregunta cierre" width="120px" height="178px" />
         </section>
     </main>
 
     <footer>
-        <ul id="redes"> <!-- cuando apliques links a sitios externos te conviene agregar el atributo target="_blank" para que se abra en una pestaña distinta y no se pierda tu sitio -->
+        <ul class="redes">
             <li>
-                <a id="instagram" href="https://www.instagram.com/larazini.dg/?hl=es"><img src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" 
-                        height="42px" /></a>
+                <a class="instagram" href="https://www.instagram.com/larazini.dg/?hl=es" target="_blank"><img
+                        src="img/icono-instagram-negro.png" alt="icono instagram" width="42px" height="42px" /></a>
+                <p>@larazini.dg</p>
             </li>
             <li>
-                <a id="mail" href="mailto:larazini08@gmail.com"><img src="img/icono-mail-negro.png" alt="icono mail" width="42px" height="42px" /></a>
+                <p>//</p>
+            </li>
+            <li>
+                <a class="mail" href="mailto:larazini08@gmail.com" target="_blank"><img src="img/icono-mail-negro.png"
+                        alt="icono mail" width="42px" height="42px" /></a>
+                <p>larazini08@gmail.com</p>
             </li>
         </ul>
         <ul id="legales">
             <li>
-                <aclaracion>Todos los derechos reservados</aclaracion> <!--esta etiqueta no existe!!!  -->
+                <p>Todos los derechos reservados</p>
             </li>
             <li>
-                <aclaracion2>Lara Zini 2026</aclaracion2>
+                <p>Lara Zini 2026</p>
             </li>
         </ul>
     </footer>
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
 </body>
 
 </html>

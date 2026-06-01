@@ -54,17 +54,20 @@
 /*CARACTERISTICAS*/
 
 body{
-    background-color:#F3F3F3;
+    background-color:var(--blanco);
     font-family:'alegreyasans-regular', sans-serif;
-    font-size: 1rem; /* no está bueno establecer un tamaño tipográfico desde el body porque vas a establecer tamaños distintos en toda la página */
     text-wrap: balance;
-    color: #042222;
+    color:var(--negro);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
-/*ESTILOS TIPOGRÁFICOS*/
+/*ESTILOS*/
 
 h1{
     font-family: 'alegreyasans-black', sans-serif;
@@ -102,24 +105,17 @@ h6{
     margin: 0;
 }
 
-aclaracion{
-    font-family: 'alegreyasans-lightitalic', sans-serif;
-    font-size: 0.75rem;
-    margin: 0;
-}
-
-aclaracion2{
-    font-family: 'alegreyasans-mediumitalic', sans-serif;
-    font-size: 1rem;
-    margin: 0;
-}
-
 p{
     font-size: 1rem;
     line-height: 1.75rem;
     margin: 0;
 }
 
+:root{
+    --blanco:#F3F3F3;
+    --verde:#00E686;
+    --negro: #042222;
+}
 
 /*TODOS LOS HTML*/
 
@@ -138,39 +134,62 @@ nav{
     gap: 30px
 }
 
+.isotipo{
+    background-image: url(img/isotipo-negro.png); width: 32px; height: 32px;
+}
+
+.isotipo:hover{
+    content: url(img/isotipo-verde.png);
+    width: 32px; height: 32px;
+}
+
 a{
     text-decoration: none;
-    color: #042222;
+    color:var(--negro);
 }
 
 a:hover{
-    color: #00E686;
+    color: var(--verde);
+}
+
+#fijo{
+    background-color: var(--verde);
+    position: fixed;
+    top: 48%;
+    left: 0%;
+    padding: 15px 15px 15px 10px;
 }
 
 .boton{
-    color: #00E686;
+    color:var(--verde);
     border-width: 3px 12px ;
-    border-color: #042222; /* para que se vea el borde te falta establecer qué tipo de apariencia va a tener con border-style y uno de los valores que te tira */
+    border-color: var(--verde);
+    border-style: solid;
+    border-radius: 1px;
+    width: 160px;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .boton:hover{
-    color: #F3F3F3;
-    background-color: #00E686;
+    color: var(--blanco);
+    background-color: var(--verde);
 }
 
 .boton-negro{
     border-width: 3px 12px ;
-    border-color: #042222;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: 1px;
+    width: 160px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .boton-negro:hover{
-    color: #00E686;
-    background-color: #042222;
-}
-
-#isotipo:hover{
-    content: url(img/isotipo-verde.png);
-    width: 32px; height: 32px;
+    color: var(--verde);
+    background-color: var(--negro);
 }
 
 ul{
@@ -185,30 +204,44 @@ footer{
     flex-wrap: wrap;
     padding: 20px 0;
     margin: 0 80px;
+    gap: 15px;
 }
 
-#instagram:hover{
+.redes li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram:hover{
     content: url(img/icono-instagram-verde.png);
 }
 
-#mail:hover{
+.mail:hover{
     content: url(img/icono-mail-verde.png);
 }
 
-#redes{
+.redes{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#legales p{
+    font-size: 0.6rem;
+    line-height: 1rem;
 }
 
 
 /*INDEX HTML*/
 section{
-padding: 20px 0;
+padding: 40px 0;
 }
 
 #bienvenida{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 50px;
     margin: 0 80px;
 }
@@ -218,21 +251,36 @@ padding: 20px 0;
     max-width: 431px;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+}
+
+#boton-bienvenida{
+    display: flex;
+    justify-content: center;
 }
 
 #proyectos-destacados{
-    background-color: #00E686;
-    padding: 20px 80px;
+    background-color:var(--verde);
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #proyectos-destacados h2{
-    color: #042222;
+    color: var(--negro);
+}
+
+#proyectos-destacados div{
+    display: flex;
+    justify-content: flex-end;
 }
 
 #signos-pregunta{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
     margin: 0 80px;
 }
@@ -241,45 +289,169 @@ padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
 /*SOBRE MI HTML*/
 
 #sobremi{
-    background-color: #00E686;
+    background-color:var(--verde);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     gap: 40px;
+    padding: 70px 20px;
 }
 
 #sobremi article{
-    max-width: 514px;
+    max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 h2{
-    color: #00E686;
+    color:var(--verde);
 }
 
 #informacion{
     display: flex;
-    justify-content: space-evenly; /* este espacio en el medio queda muy grande en pantallas grandes, te conviene aprovechar el gap y directamente centrar el contenido para que no queden columnas tan alejadas */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding: 20px;
 }
 
-#formacion{
-    max-width: 388px; /* está bien que se lo apliques a formación, pero en proyectos grandes te conviene aplicarlo sobre una etiqueta más general, por ej, los div que están encolumnando las secciones podrían empezar a tener una class para poder agregarle este máximo y, si algún día cambia el contenido, el diseño sigue coherente en tamaños */
+#informacion div{
+    max-width: 388px;
+}
+
+#formacion, #certificacion, #habilidades, #experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#habilidades div{
+    display: flex;
+    gap: 20px;
+}
+
+#experiencia div{
+    display: flex;
+    gap: 20px;
+}
+
+#informacion p {
+    font-family: 'alegreyasans-mediumitalic', sans-serif;
 }
 
 /*PROYECTOS HTML*/
 
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+/*HOVER MINIATURAS*/
+
+#galeria-disco a{
+    display: inline-block;
+    background-image: url(img/proyectos/disco/disco-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-disco a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#galeria-landscape a{
+    display: inline-block;
+    background-image: url(img/proyectos/landscape/landscape-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-landscape a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#galeria-libro a{
+    display: inline-block;
+    background-image: url(img/proyectos/libro/libro-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-libro a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#galeria-festival a{
+    display: inline-block;
+    background-image: url(img/proyectos/festival/festival-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-festival a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#galeria-fotoproducto a{
+    display: inline-block;
+    background-image: url(img/proyectos/fotoproducto/fotoproducto-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-fotoproducto a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#galeria-modelo a{
+    display: inline-block;
+    background-image: url(img/proyectos/modelo/modelo-thumbnal-hover.jpg);
+    background-size: 410px 308px;
+    background-position: center;
+}
+
+#galeria-modelo a:hover img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
 
 /*CONTACTO HTML*/
 
+#contacto-body{
+    background-color: var(--verde);
+}
+
 #contacto{
-    background-color: #00E686;
     padding: 20px 80px;
 }
 
@@ -289,8 +461,21 @@ form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 0;
+    gap: 80px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 label{
@@ -299,17 +484,88 @@ label{
 }
 
 input{
-    width: 100%;
+    width: 410px;
     height: 30px;
     border-width: 3px 12px ;
-    border-color: #042222;
-    background-color: #00E686;
+    border-color:var(--negro);
+    border-style: solid;
+    background-color:var(--verde);
+}
+
+.enviar{
+    width: 160px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'alegreyasansSC-regular', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 0.2rem;
+}
+
+.enviar:hover{
+    color: var(--verde);
+    background-color: var(--negro);
+}
+
+.boton-enviar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0;
+    border-radius: 1px;
 }
 
 textarea{
-    width: 100%;
-    height: 130px;
+    width:410px;
+    height: 215px;
     border-width: 3px 12px ;
-    border-color: #042222;
-    background-color: #00E686;
+    border-color: var(--negro);
+    border-style: solid;
+    background-color:var(--verde);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+    #bienvenida, #signos-pregunta{
+        margin:0 30px
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2.1rem;
+    }
+
+    h4{
+        font-size: 1.3rem;
+    }
+
+    h6{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    header{
+        margin: 0 20px;
+    }
+
+    footer{
+        margin: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    #logo-lara, #logo-zini{
+        width: 71px;
+        height: 236px;
+    }
+
+    #signo-abre, #signo-cierra{
+        width: 44px;
+        height: 65px;
+    }
 }
